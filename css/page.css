@@ -34,7 +34,19 @@ body {width:100%;padding:0px;margin:0px;}
 .project_section{background-repeat:no-repeat;background-position-x:center;background-position-y:bottom;background-image:url(../images/hp_3dots_white.png);background-position:center bottom;}
 #project_detail .project_box{position:absolute;right:0px;top:0px;width:300px;margin:3px auto 0;}
 #project_detail .project_box_infos {color:white;}
-.project_box_bottons{padding-top: 10px;}
+.project_box_bottons{font-family:'clearviewhwy-3-wregular';font-size:14px;width:300px;padding-top:10px;position:fixed;}
+.profile{width:27%;float:left;}
+.whatWeDo{width:46%;float:left;padding:0;}
+.whatWeDo h1{font-family:'clearviewhwy-3-wregular';font-size:16px;text-transform:uppercase;color:#414042;width:83%;margin:0;padding:0 36px 10px 36px;background-image: url(../images/arrow_contacts.png);background-repeat:no-repeat;background-position:11px 2px;}
+.whatWeDo p{font-family:'Arial';font-size:14px;line-height:20px;color:#414042;width:83%;margin:0;padding:0 36px 20px 36px;}
+.contactMessage{font-family:'clearviewhwy-3-wregular';font-size:20px;color:#ff782b;text-transform:uppercase;width:250px;float:left;}
+.contactForm{font-family:'clearviewhwy-3-wregular';font-size:16px;color:#000000;text-transform:uppercase;width:602px;float:left;margin:0;padding:0 0 0 50px;}
+.boxTitle,.boxTitle1,.boxField{width:287px;float:left;margin:0;padding:0 14px 0 0;}
+.boxSpacer1{width:287px;height:20px;float:left;}
+#formField{padding-bottom:15px;background-image: url(../images/au_formField.gif);background-repeat:no-repeat;background-position:left top;}
+.boxTitle2{height:0px;margin:0;padding:0;overflow:hidden;float:left;}
+.box3{width:601px;height:122px;float:left;background-image: url(../images/au_formMessage.gif);background-repeat:no-repeat;background-position:left top;padding-bottom: 15px;}
+.formtextarea{width:570px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
 
 @media screen and (max-width:762px) {
 	#page { width:377px; background-size: 300px 800px !important; }
@@ -53,20 +65,18 @@ body {width:100%;padding:0px;margin:0px;}
 	#project_detail .project_box {position:relative;width:100%;margin:3px auto 15px;}
 	#project_detail .project_box_infos {color:#FFFFFF;padding:0 0 15px;}
 	.yolo{text-align:right;background-image:url(../images/pj_frameBg.png);background-repeat:repeat-x;}
-	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;overflow:hidden;height:0;}
+	.project_box_bottons{overflow:hidden;height:0;}
 	.footer .footerBtn{width:300px;margin:0 auto;font-family:'clearviewhwy-3-wregular';height:25px;font-size:14px;padding:0 0 10px;overflow:visible;}
-	.profile{width:100%;height:0px;float:left;overflow:hidden;}
-	.whatWeDo{width:100%;float:left;padding:0;}
-	.contactMessage,.contactForm{width:88%;float:left;padding:0 10px 20px 36px}
-	.whatWeDo h1{width:88%;margin:0;padding:0 10px 10px 36px;}
-	.whatWeDo p{width:88%;margin:0;padding:0 10px 20px 36px;}
-	.boxTitle,.boxTitle2,.boxField{width:100%;float:left;}
-	.boxSpacer1{width:100%;height:0px;float:left;}
-	.boxTitle,.boxTitle2,.boxField{margin:0;padding:0;}
+	.profile{width:100%;height:0px;overflow:hidden;}
+	.whatWeDo{width:100%;}
+	.contactMessage,.contactForm{width:88%;padding:0 10px 20px 36px}
+	.whatWeDo h1{width:88%;padding:0 10px 10px 36px;}
+	.whatWeDo p{width:88%;padding:0 10px 20px 36px;}
+	.boxSpacer1{width:100%;height:0px;}
 	.boxTitle1{height:0px;overflow:hidden;}
-	#formField{background-image: url(../images/au_formField330.gif);}
-	.box3{width:100%;height:150px;float:left;background-image: url(../images/au_formMessage330.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
-	.formtextarea{width:310px;height:130px;margin:10px;padding:0;border:0;background-color:transparent;}
+	#formField{width:100%;background-image: url(../images/au_formField330.gif);}
+	.box3{width:100%;height:150px;background-image: url(../images/au_formMessage330.gif);}
+	.formtextarea{width:310px;height:130px;}
 	.sendingbtn{text-align:right;}
 }
 @media screen and (min-width:762px) and (max-width:961px) {
@@ -88,18 +98,16 @@ body {width:100%;padding:0px;margin:0px;}
 	.yolo{text-align:right;background-image:url(../images/pj_frameBg.png);background-repeat:repeat-x;}
 	.project_box_bottons{overflow:hidden;height:0;}
 	.footer .footerBtn{width:300px;margin:0 auto;font-family:'clearviewhwy-3-wregular';height:25px;font-size:14px;padding:0 0 10px;overflow:visible;}
-	.profile{width:100%;height:0px;float:left;overflow:hidden;}
-	.whatWeDo{width:100%;float:left;padding:0;}
-	.contactMessage,.contactForm{width:88%;float:left;padding:0 36px 20px 36px}
-	.whatWeDo h1{width:88%;margin:0;padding:0 36px 10px 36px;}
-	.whatWeDo p{width:88%;margin:0;padding:0 36px 20px 36px;}
-	.boxTitle,.boxTitle2,.boxField{width:100%;float:left;}
-	.boxSpacer1{width:100%;height:0px;float:left;}
-	.boxTitle,.boxTitle2,.boxField{margin:0;padding:0;}
+	.profile{width:100%;height:0px;overflow:hidden;}
+	.whatWeDo{width:100%;}
+	.contactMessage,.contactForm{width:88%;padding:0 36px 20px 36px}
+	.whatWeDo h1{width:88%;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:88%;padding:0 36px 20px 36px;}
+	.boxSpacer1{width:100%;height:0px;}
 	.boxTitle1{height:0px;overflow:hidden;}
-	#formField{background-image: url(../images/au_formField510.gif);}
-	.box3{width:100%;height:122px;float:left;background-image: url(../images/au_formMessage510.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
-	.formtextarea{width:490px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	#formField{width:100%;background-image:url(../images/au_formField510.gif);}
+	.box3{width:100%;height:122px;background-image: url(../images/au_formMessage510.gif);}
+	.formtextarea{width:490px;height:100px;}
 	.sendingbtn{text-align:right;}
 }
 @media screen and (min-width:961px) and (max-width:1148px) {
@@ -116,44 +124,30 @@ body {width:100%;padding:0px;margin:0px;}
 	.footer_text .column_2 {text-align: justify;float: left;width: 480px;}
 	#project_detail .project_box {position: absolute;right:0px;top: 0px;width:300px;margin:3px auto 0;}
 	#project_detail .project_box_infos {position: fixed;width:300px;color:white;height:auto;overflow: visible;}
-	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;}
 	.footer .footerBtn{overflow:hidden;height:0;}
-	.profile{width:27%;float:left;}
-	.whatWeDo{width:46%;float:left;padding:0;}
-	.contactMessage{width:250px;float:left;}
-	.contactForm{width:602px;float:left;margin:0;padding:0 0 0 50px;}
-	.whatWeDo h1{width:83%;margin:0;padding:0 36px 10px 36px;}
-	.whatWeDo p{width:83%;margin:0;padding:0 36px 20px 36px;}
-	.boxTitle,.boxTitle1,.boxField{width:287px;float:left;}
-	.boxSpacer1{width:287px;height:20px;float:left;}
-	.boxTitle,.boxTitle1,.boxField{margin:0;padding:0 14px 0 0;}
-	.boxTitle2{height:0px;overflow:hidden;}
-	#formField{background-image: url(../images/au_formField.gif);}
-	.box3{width:601px;height:122px;float:left;background-image: url(../images/au_formMessage.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
-	.formtextarea{width:570px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.profile{width:27%;}
+	.whatWeDo{width:46%;}
+	.contactForm{width:602px;padding:0 0 0 50px;}
+	.whatWeDo h1{width:83%;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:83%;padding:0 36px 20px 36px;}
+	.box3{width:601px;height:122px;background-image: url(../images/au_formMessage.gif);}
+	.formtextarea{width:570px;height:100px;}
 	.sendingbtn{width:45%;text-align:left;}
 }
 @media screen and (min-width:1148px) {
 	#page{width:1148px;}
 	#project_detail .project_box_infos {position: fixed;width:300px;color:white;height:auto;overflow: visible;}
-	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;}
 	#footer_text_bgscreen {display: block;}
 	#footer_text_slscreen {display: none;}
 	.footer_text .column_1 {float: left;padding-right: 5px;}
 	.footer_text .column_2 {text-align: justify;float: left;width:430px;}
-	.profile{width:27%;float:left;}
-	.whatWeDo{width:46%;float:left;padding:0;}
-	.contactMessage{width:250px;float:left;}
-	.contactForm{width:602px;float:left;margin:0;padding:0 0 0 50px;}
-	.whatWeDo h1{width:83%;margin:0;padding:0 36px 10px 36px;}
-	.whatWeDo p{width:83%;margin:0;padding:0 36px 20px 36px;}
-	.boxTitle,.boxTitle1,.boxField{width:287px;float:left;}
-	.boxSpacer1{width:287px;height:20px;float:left;}
-	.boxTitle,.boxTitle1,.boxField{margin:0;padding:0 14px 0 0;}
-	.boxTitle2{height:0px;overflow:hidden;}
-	#formField{background-image: url(../images/au_formField.gif);}
-	.box3{width:601px;height:122px;float:left;background-image: url(../images/au_formMessage.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
-	.formtextarea{width:570px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.profile{width:27%;}
+	.whatWeDo{width:46%;}
+	.contactForm{width:602px;padding:0 0 0 50px;}
+	.whatWeDo h1{width:83%;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:83%;padding:0 36px 20px 36px;}
+	.box3{width:601px;height:122px;background-image: url(../images/au_formMessage.gif);}
+	.formtextarea{width:570px;height:100px;}
 	.sendingbtn{width:45%;text-align:left;}
 }
 
@@ -175,13 +169,8 @@ body {width:100%;padding:0px;margin:0px;}
 .individualContact{width:100%;font-family:'clearviewhwy-3-wregular';font-size:14px;color:#414042;text-transform:uppercase;}
 .individualContact a{color:#414042;text-decoration:none;margin:0;padding:0 10px 0 0;}
 .individualContact a:hover{color:#ff782b;text-decoration:none;margin:0;padding:0 10px 0 0;}
-.whatWeDo h1{font-family:'clearviewhwy-3-wregular';font-size:16px;text-transform:uppercase;color:#414042;background-image: url(../images/arrow_contacts.png);background-repeat:no-repeat;background-position:11px 2px;}
-.whatWeDo p{font-family:'Arial';font-size:14px;line-height:20px;color:#414042;}
-.contactMessage{font-family:'clearviewhwy-3-wregular';font-size:20px;color:#ff782b;text-transform:uppercase;}
-.contactForm{font-family:'clearviewhwy-3-wregular';font-size:16px;color:#000000;text-transform:uppercase;}
 .formTitle{font-family:'clearviewhwy-3-wregular';font-size:13px;text-transform:none;height:25px;padding:10px 20px 0 10px;float:left;background-image: url(../images/au_3dots.png);background-repeat: no-repeat;background-position: right center;}
 .formInfo{font-family:'Arial';font-size:12px;text-transform:lowercase;height:25px;padding:5px 0 0 10px;float:left;}
-#formField{padding-bottom:15px;background-repeat: no-repeat;background-position:left top;}
 #Push{padding-left:10px;}
 .sendingbtn{float:right;background-image: url(../images/arrow_contacts.png);background-repeat:no-repeat;padding-left: 25px;}
 .btnstyle{border:0;background-color:transparent;text-transform:uppercase;font-family:'clearviewhwy-3-wregular';font-size:16px;margin:0;padding:0;}
