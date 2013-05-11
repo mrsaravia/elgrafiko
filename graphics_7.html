@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<title>elGrafiko | taste of home | graphic and web solutions</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/page.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/stylesheet.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body id="sparated_body">
+	<div id="page_top">
+		<div class="header">
+			<div id="logo"><a href="index.html"><img alt="logo" src="images/elGrafiko_logo.png" border="0"></a></div>
+			<div id="menu">
+				<ul>
+					<li><a href="websites.html">websites</a></li>
+					<li class="project_section"><a href="graphics.html">graphics</a></li>
+					<li><a href="illustrations.html">illustrations</a></li>
+					<li><a href="packaging.html">packaging</a></li>
+					<li><a href="animations.html">animations</a></li>
+					<li><a href="aboutus.html">about us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page_project">
+		<div id="project_detail">
+			<div class="project_box">
+				<div class="project_box_infos">
+	        		<div class="yolo"><img src="images/pj_frameTitle.png" /></div>
+	                <div class="shadow_box">
+						<div class="project_title">taste of home</div>
+						<div class="project_subtitle">
+							<div>client: Reader's Digest</div>
+							<div>designer: Diana Levin</div>
+						</div>
+	                	<div id="dots">
+	                	    <img src="images/pj_5dots_white.png" />
+	                	</div>
+						<div class="project_description">
+							<p>These are cooking books series in French, where I conceptualized and produced both covers and the inner page layouts.</p>
+							<p>The project required balancing type and photography on a page in order to produce the most effective publication possible.</p>
+						</div>
+	        		</div>
+	                <div class="project_box_bottons">
+	                    <div class="project_box_botton botton_next"><a href="graphics_1.html">next project</a></div>
+	                    <div class="project_box_botton botton_top"><a href="#" id="back-top">back to top</a></div>
+	                </div>
+				</div>
+			</div>
+			<div class="project_portfolio">
+				<img alt="taste of home" src="portfolio/graphics/tasteOfHome_01.jpg">
+			</div>
+			<div class="project_portfolio">
+				<img alt="taste of home" src="portfolio/graphics/tasteOfHome_02.jpg">
+			</div>
+			<div class="project_portfolio">
+				<img alt="taste of home" src="portfolio/graphics/tasteOfHome_03.jpg">
+			</div>
+			<div class="project_portfolio">
+				<img alt="taste of home" src="portfolio/graphics/tasteOfHome_04.jpg">
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footerBtn">
+	        	<div class="project_box_botton botton_next"><a href="graphics_7.html">next project</a></div>
+	    		<div class="project_box_botton botton_top"><a href="#" id="back-top">back to top</a></div>
+	        </div>
+		</div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // hide #back-top first
+            $(".botton_top").hide();
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.botton_top').fadeIn();
+                    } else {
+                       $('.botton_top').fadeOut();
+                   }
+               });
+                // scroll body to 0px on click
+                $('#back-top').each(function(){
+                    $(this).click(function(){ 
+                        $('html,body').animate({ scrollTop: 0 }, 'slow');
+                        return false; 
+                    });
+                });
+            });
+        });
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5559101-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    
+    <title>elGrafiko | packaging section | graphic and web solutions</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/page.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/stylesheet.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body id="unique_body">
+    <div id="page">
+        <div class="header">
+            <div id="logo"><a href="index.html"><img alt="logo" src="images/elGrafiko_logo.png" border="0"></a></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="websites.html">websites</a></li>
+                    <li><a href="graphics.html">graphics</a></li>
+                    <li><a href="illustrations.html">illustrations</a></li>
+                    <li class="project_section">packaging</li>
+                    <li><a href="animations.html">animations</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects">
+            <a href="packaging_1.html"><div class="project">
+                <div class="project_title">Books on CD</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/packaging/booksOnCDs_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <!-- <a href="#"><div class="project">
+                <div class="project_title">Emergency Kit</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/packaging/emergencyKit_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a> -->
+            <a href="packaging_2.html"><div class="project">
+                <div class="project_title">Interactive DVD</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/packaging/interactiveCDs_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="footer">
+            <div id="dots">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.project').mouseover(function(e){
+                $(this).find('.project_rollover').removeClass('rollover-out');
+                $(this).find('.project_rollover').addClass('rollover-in');
+                $('.project_rollover').removeClass('rollover-out');
+            });
+            $('.project').mouseout(function(e){
+                $(this).find('.project_rollover').removeClass('rollover-in');
+                $(this).find('.project_rollover').addClass('rollover-out');
+                //$('.project_rollover').removeClass('rollover-out');
+            });
+        });
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5559101-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,188 +1,133 @@
 <html>
-	<head>
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-              function filterPath(string) {
-              return string
-                .replace(/^\//,'')
-                .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-                .replace(/\/$/,'');
-              }
-              var locationPath = filterPath(location.pathname);
-              var scrollElem = scrollableElement('html', 'body');
-             
-              $('a[href*=#]').each(function() {
-                var thisPath = filterPath(this.pathname) || locationPath;
-                if (  locationPath == thisPath
-                && (location.hostname == this.hostname || !this.hostname)
-                && this.hash.replace(/#/,'') ) {
-                  var $target = $(this.hash), target = this.hash;
-                  if (target) {
-                    var targetOffset = $target.offset().top;
-                    $(this).click(function(event) {
-                      event.preventDefault();
-                      $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
-                        location.hash = target;
-                      });
-                    });
-                  }
-                }
-              });
-             
-              // use the first element that is "scrollable"
-              function scrollableElement(els) {
-                for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-                  var el = arguments[i],
-                      $scrollElement = $(el);
-                  if ($scrollElement.scrollTop()> 0) {
-                    return el;
-                  } else {
-                    $scrollElement.scrollTop(1);
-                    var isScrollable = $scrollElement.scrollTop()> 0;
-                    $scrollElement.scrollTop(0);
-                    if (isScrollable) {
-                      return el;
-                    }
-                  }
-                }
-                return [];
-              }
-             
-            });
-        </script>
-	</head>
-    <body>
-    	<div class="container">
-        	<div class="header">
-           		<div class="insideheader">
-                    <div class="logo">
-                        <a href="#1"><img src="images/logo.png" alt="logo" border="0"></a>
-                  	</div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#2">socialmedia</a></li>
-                            <li><img class="animatedgif" src="images/aniJewel_bl_01.gif" alt="animated gif" border="0"></li>
-                            <li><a href="#3">portfolio</a></li>
-                            <li><img class="animatedgif" src="images/aniJewel_bl_02.gif" alt="animated gif" border="0"></li>
-                            <li><a href="#4">contact</a></li>
-                        </ul>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    
+    <title>elGrafiko | Diana Levin and Michael Saravia | graphic and web solutions</title>
+    <link rel="stylesheet" media="all" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/stylesheet.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body id="unique_body">
+    <div id="page">
+        <div class="header">
+            <div id="logo"><img alt="logo" src="images/elGrafiko_logo.png" border="0"></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="websites.html">websites</a></li>
+                    <li><a href="graphics.html">graphics</a></li>
+                    <li><a href="illustrations.html">illustrations</a></li>
+                    <li><a href="packaging.html">packaging</a></li>
+                    <li><a href="animations.html">animations</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
             </div>
-            <div class="content">
-            	<div class="greetingSec">
-                	<div class="flowerlady">
-                    	<img class="quote1" src="images/quote1.png" alt="quote 1" border="0">
-                    </div>
-                </div>
-            	<div class="socialSec">
-                    <div class="portCont">
-                        <div class="instaFeeds">
-                            <iframe src="http://snapwidget.com/in/?u=Y2FsbGl0c3ByaW5nfGlufDE3NXwzfDR8fHllc3w2fGZhZGVPdXQ=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:573px; height: 764px" ></iframe>
-                        </div>
-                    	<div class="twitterFeeds">
-                           <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/msaravia" data-widget-id="324213025236193280">Tweets by @msaravia</a>
-                            <script>
-                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                            </script>
-                        </div>
-                        <div class="socialLogo one">
-                            <a href="#" target="_blank"><img src="images/lg-Instagram.png"></a>
-                        </div>
-                        <div class="socialLogo two">
-                            <a href="https://twitter.com/valeriagomezs" target="_blank"><img src="images/lg-twitter.png"> @valeriagomezs</a>
-                        </div>
-                        <div style="clear:both"></div>
-                    </div>
-                </div>
-            	<div class="portfolioSec">
-                	<div class="portCont">
-                   	  	<div class="column">
-                        	<img src="images/port1.jpg">
-                            <img class= "port1" src="images/port2.jpg">
-                            <img src="images/port3.jpg">
-                      	</div>
-                        <div class="column">
-                        	<img src="images/port4.jpg">	
-                            <img class= "port1" src="images/port5.jpg">
-                          	<img class= "port2" src="images/port7.jpg">
-                          	<img class= "port3" src="images/port6.jpg">
-                            <img src="images/port8.jpg">
-                      	</div>
-						<div class="column">
-                        	<img src="images/port9.jpg">
-                            <img class= "port1" src="images/port10.jpg">
-							<img src="images/port11.jpg">
-                        </div>
-                    	<div style="clear:both"></div>
-                    </div>
-                </div>
-            	<div class="contactSec">
-                	<div class="contact">
-                        <div class="contact2">
-                            <div class="bio">
-                                <h1 class="contacttitle">
-                                    About the Girl
-                                </h1>
-                                <p class="contactcopy">
-                                    Valeria Gomez was borm in Montreal, Canada. As a little girl you would always find that her passion was drawing. She took many art classes growing up and at the age of 16 she started thinking more seriously about becoming a makeup artist. At the age of 18 she was accepted to Make-Up Designory (MUD) in New York, where she took advanced classes in makeup. After graduating, she became a very young regional makeup artist for Chanel, and other makeup counters. She worked for Mac cosmetics for many years and became a top certified artist, while working in the industry. As part of her many other accomplishments, she is often invited to participate in various fashion shows, inculding New York fashion week.
-                                </p>
-                            </div>
-                            <div class="quote2">
-                                <img src="images/quote2.png" alt="quote2" border="0">
-                            </div>
-                    		<div style="clear:both;"></div>
-                        </div>
-                        <div class="contact2">
-                            <div class="formtitles">
-                            	<div class="titleBox1">
-                            		name
-                              	</div>
-                            	<div class="titleBox1">
-                            		email
-                              	</div>
-                            	<div class="titleBox1">
-                            		message
-                              	</div>
-                                <form name="contactform" method="post" action="contactform.php" id="theform">
-                            	<div class="titleBox2">
-                            		<input class="btnstyle" type="submit" value="Send">
-                              	</div>
-                            </div>
-                            <div class="mailing">
-                                <div class="titleBox1 formform1">
-                                    <input class="formInput" type="text" name="name" id="name">
-                                </div>
-                                <div class="titleBox1 formform1">
-                                    <input class="formInput" type="text" name="email" id="email">
-                                </div>
-                                <div class="titleBox1 formform1">
-                                    <textarea class="formtextarea" cols="44" name="Message" id="Message" rows="22"></textarea>
-                                </div>                              
-                                </form>
-                            </div>
-                            <div class="profilephoto">
-                                <img src="images/artist.jpg" alt="artist" border="0">
-                            </div>
-                    		<div style="clear:both"></div>
-                        </div>
-                        <div class="contact2">
-                        	<h1 class="artistinfo">
-                            	valeriagomez.s@gmail.com<br/>
-                                347<img class="animatedgif" src="images/aniJewel_wh_01.gif"> 654<img class="animatedgif" src="images/aniJewel_wh_02.gif"> 9781<br/>
-                                new york, ny
-                            </h1>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-            <div id="1" class="anchor1"></div>
-            <div id="2" class="anchor2"></div>
-            <div id="3" class="anchor3"></div>
-            <div id="4" class="anchor4"></div>
         </div>
-    </body>
+        <div id="projects">
+            <a href="websites_1.html"><div class="project">
+                <div class="project_title">Call It Spring ss13</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/websites/callItSpring_SS13_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <a href="graphics_4.html"><div class="project">
+                <div class="project_title">Swap and Drop Diet Cookbook</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/graphics/swapAndDrop_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <a href="websites_2.html"><div class="project">
+                <div class="project_title">Call It Spring Blog</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/websites/callItSpring_blog_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <a href="graphics_2.html"><div class="project">
+                <div class="project_title">fresh home magazine</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/graphics/freshHomeMag_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <a href="graphics_6.html"><div class="project">
+                <div class="project_title">Our Journey - wedding invitation</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/graphics/wedInvite_md_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+            <a href="packaging_1.html"><div class="project">
+                <div class="project_title">Books on CD</div>
+                <div class="project_rollover_2"></div>
+                <div class="project_image">
+                    <img src="portfolio/packaging/booksOnCDs_icon.jpg" border="0">
+                    <div class="project_rollover">
+                        <img src="images/rollover.png" border="0">
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="footer">
+            <div id="dots">
+                <img src="images/hp_3dots.png" />
+            </div>
+            <div id="footer_text_bgscreen" class="footer_text">
+                <div class="column_1">WE ARE ELGRAFIKO - </div>
+                <div class="column_2">
+                    A partnership between two designers who create graphic and web bases projects. Our ability to deliver unique brand identity and the experience of a wide range of projects. We insure that a cohesive visual language is reinforced through every detail.
+                </div>
+            </div>
+            <div id="footer_text_slscreen" class="footer_text">
+                <div class="column_1">WE ARE ELGRAFIKO</div>
+                <div class="column_2">
+                    A partnership between two designers who create graphic and web bases projects. Our ability to deliver unique brand identity and the experience of a wide range of projects. We insure that a cohesive visual language is reinforced through every detail.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.project').mouseover(function(e){
+                $(this).find('.project_rollover').removeClass('rollover-out');
+                $(this).find('.project_rollover').addClass('rollover-in');
+                $('.project_rollover').removeClass('rollover-out');
+            });
+            $('.project').mouseout(function(e){
+                $(this).find('.project_rollover').removeClass('rollover-in');
+                $(this).find('.project_rollover').addClass('rollover-out');
+                //$('.project_rollover').removeClass('rollover-out');
+            });
+        });
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5559101-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
 </html>

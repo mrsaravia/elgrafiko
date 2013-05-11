@@ -4,13 +4,14 @@
 	html,#map-canvas{height:100%;}
 	body{height:100%;margin:0;padding:0}
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6U8UTNaZqAz4My3h-qB3dmTq3A17Odzs&sensor=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6U8UTNaZqAz4My3h-qB3dmTq3A17Odzs&sensor=false"></script>
+<script src="http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=false" type="text/javascript"></script>
 <script>
 	var map;
 	function initialize() {
 		var mapOptions = {
-    		zoom: 8,
-    		center: new google.maps.LatLng(-34.397, 150.644),
+    		zoom: 5,
+    		center: new google.maps.LatLng(40.00000,-95.00000),
     		mapTypeId: google.maps.MapTypeId.ROADMAP
   		};
   		map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -48,7 +49,7 @@
 					Ontario CA, United States<br />
 					91764-5207
 				</p>
-				<p class="locationAnchor">View on map</p>
+				<p class="locationAnchor" data-latlng="48.571922,-78.113439" onclick="showmap(10);" id="succ_10"><a class="gmap_lien" href="http://maps.google.ca/maps?q=48.562011,-71.642384">View on map</a></p>
 			</div>
 			<div class="storeLocation">
 				<h3 class="locationTitle">Shops at<br/>Montebello</h3>

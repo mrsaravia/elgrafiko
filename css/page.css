@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'clearviewhwy-3-wregular';
+    src: url('clearviewhwy-three-w-webfont.eot');
+    src: url('clearviewhwy-three-w-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clearviewhwy-three-w-webfont.woff') format('woff'),
+         url('clearviewhwy-three-w-webfont.ttf') format('truetype'),
+         url('clearviewhwy-three-w-webfont.svg#clearviewhwy-3-wregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {padding: 0px;margin: 0px;}
+#unique_body, #sparated_body #page_top{background-color: #11ABDB;background-image: url("../images/bg.jpg");color: white;font-family: 'clearviewhwy-3-wregular';}
+#sparated_body #page_top {margin:auto;box-shadow: 0 0 6px 4px #888888;}
+#page_project{width:902px;}
+
+#sparated_body header {margin: auto;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat scroll center top transparent;}
+.header {text-align: center;}
+#logo {padding-bottom:10px;text-align:center;}
+#page {width:1148px;position: relative;margin:auto;min-height:700px;height:auto;overflow: visible;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat top center transparent;}
+.footer{width:600px;margin:0 auto;}
+#footer_text_slscreen {display: none;}
+.footer .footerBtn{overflow:hidden;height:0;}
+#menu {width:100%;height:35px;}
+#menu ul li a, .project_section{width:8em;padding:0.2em 0.6em;}
+#menu{text-align:center;margin:auto;font-size:14px;}
+#menu ul {float:left;width:100%;padding:0;margin:0 auto;list-style-type:none;text-transform:uppercase;}
+#menu ul li {display:inline;}
+#menu ul li a {text-decoration:none;color:white;}
+#menu ul li a.selected {background: url("../images/hp_3dots_white.png") no-repeat bottom center transparent;}
+#menu ul li a:hover {color: #ff782b;}
+.project_section{background-repeat:no-repeat;background-position-x:center;background-position-y:bottom;background-image:url(../images/hp_3dots_white.png);background-position:center bottom;}
+#project_detail .project_box{position:absolute;right:0px;top:0px;width:300px;margin:3px auto 0;}
+
+@media screen and (max-width:762px) {
+	#page { width:377px; background-size: 300px 800px !important; }
+	#page_project{width:377px; background-size: 300px 800px !important; }
+	#sparated_body header{text-align:center;margin:auto;}
+	#menu {width:350px;height:50px;}
+	#menu ul li {display:inline-block;margin-bottom:5px;}
+	#menu ul li a, .project_section{padding:0 0.6em 0.2em;}
+	.footer{width:100%;}
+	#footer_text_bgscreen {display: none;}
+	#footer_text_slscreen {display: block;}
+	.footer_text {margin: auto;position: relative;text-align: center;padding: 5px 5px 20px;}
+	.footer_text .column_1 {text-align: center;padding-bottom: 15px;}
+	.footer_text .column_2 {text-align: justify;}
+	.project_portfolio img{width:377px;}
+	#project_detail .project_box {position:relative;width:100%;margin:3px auto 15px;}
+	#project_detail .project_box_infos {color:#FFFFFF;padding:0 0 15px;}
+	.yolo{text-align:right;background-image:url(../images/pj_frameBg.png);background-repeat:repeat-x;}
+	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;overflow:hidden;height:0;}
+	.footer .footerBtn{width:300px;margin:0 auto;font-family:'clearviewhwy-3-wregular';height:25px;font-size:14px;padding:0 0 10px;overflow:visible;}
+	.profile{width:100%;height:0px;float:left;overflow:hidden;}
+	.whatWeDo{width:100%;float:left;padding:0;}
+	.contactMessage,.contactForm{width:88%;float:left;padding:0 10px 20px 36px}
+	.whatWeDo h1{width:88%;margin:0;padding:0 10px 10px 36px;}
+	.whatWeDo p{width:88%;margin:0;padding:0 10px 20px 36px;}
+	.boxTitle,.boxTitle2,.boxField{width:100%;float:left;}
+	.boxSpacer1{width:100%;height:0px;float:left;}
+	.boxTitle,.boxTitle2,.boxField{margin:0;padding:0;}
+	.boxTitle1{height:0px;overflow:hidden;}
+	#formField{background-image: url(../images/au_formField330.gif);}
+	.box3{width:100%;height:150px;float:left;background-image: url(../images/au_formMessage330.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
+	.formtextarea{width:310px;height:130px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.sendingbtn{text-align:right;}
+}
+@media screen and (min-width:762px) and (max-width:961px) {
+	#page { width:760px; background-size: 300px 800px !important; }
+	#page_project{width:580px; background-size: 300px 800px !important; }
+	#sparated_body header {text-align:center;margin:auto;}
+	#menu {width:590px;height:35px;}
+	#menu ul li {height:20px;}
+	#menu ul li a, .project_section{width:8em;padding:0.2em 0.46em;}
+	#projects {padding:0;}
+	.footer{width:100%;}
+	#footer_text_bgscreen {display: none;}
+	#footer_text_slscreen {display: block;}
+	.footer_text {margin: 0 auto 25px auto;position: relative;text-align: center;width: 96%}
+	.footer_text .column_1 {text-align: center;padding-bottom: 15px;}
+	.footer_text .column_2 {text-align: justify;}
+	#project_detail .project_box {position:relative;width:100%;margin:3px auto 15px;}
+	#project_detail .project_box_infos {width:100%;color:#FFFFFF;height:auto;overflow: visible;}
+	.yolo{text-align:right;background-image:url(../images/pj_frameBg.png);background-repeat:repeat-x;}
+	.project_box_bottons{overflow:hidden;height:0;}
+	.footer .footerBtn{width:300px;margin:0 auto;font-family:'clearviewhwy-3-wregular';height:25px;font-size:14px;padding:0 0 10px;overflow:visible;}
+	.profile{width:100%;height:0px;float:left;overflow:hidden;}
+	.whatWeDo{width:100%;float:left;padding:0;}
+	.contactMessage,.contactForm{width:88%;float:left;padding:0 36px 20px 36px}
+	.whatWeDo h1{width:88%;margin:0;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:88%;margin:0;padding:0 36px 20px 36px;}
+	.boxTitle,.boxTitle2,.boxField{width:100%;float:left;}
+	.boxSpacer1{width:100%;height:0px;float:left;}
+	.boxTitle,.boxTitle2,.boxField{margin:0;padding:0;}
+	.boxTitle1{height:0px;overflow:hidden;}
+	#formField{background-image: url(../images/au_formField510.gif);}
+	.box3{width:100%;height:122px;float:left;background-image: url(../images/au_formMessage510.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
+	.formtextarea{width:490px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.sendingbtn{text-align:right;}
+}
+@media screen and (min-width:961px) and (max-width:1148px) {
+	#page{width:961px;}
+	#page_project{width:902px; }
+	#sparated_body header { width:961px;text-align:center;margin:auto; }
+	#menu {width:100%;height:35px;}
+	#menu ul li a, .project_section{width:8em;padding:0.2em 0.6em;}
+	#projects{width: 80%;}
+	#footer_text_bgscreen {display: block;}
+	#footer_text_slscreen {display: none;}
+	.footer_text {width: 70%;height: 125px;margin: auto;position: relative;}
+	.footer_text .column_1 {float: left;padding-right: 5px;}
+	.footer_text .column_2 {text-align: justify;float: left;width: 480px;}
+	#project_detail .project_box {position: absolute;right:0px;top: 0px;width:300px;margin:3px auto 0;}
+	#project_detail .project_box_infos {position: fixed;width:300px;color:white;height:auto;overflow: visible;}
+	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;}
+	.footer .footerBtn{overflow:hidden;height:0;}
+	.profile{width:27%;float:left;}
+	.whatWeDo{width:46%;float:left;padding:0;}
+	.contactMessage{width:250px;float:left;}
+	.contactForm{width:602px;float:left;margin:0;padding:0 0 0 50px;}
+	.whatWeDo h1{width:83%;margin:0;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:83%;margin:0;padding:0 36px 20px 36px;}
+	.boxTitle,.boxTitle1,.boxField{width:287px;float:left;}
+	.boxSpacer1{width:287px;height:20px;float:left;}
+	.boxTitle,.boxTitle1,.boxField{margin:0;padding:0 14px 0 0;}
+	.boxTitle2{height:0px;overflow:hidden;}
+	#formField{background-image: url(../images/au_formField.gif);}
+	.box3{width:601px;height:122px;float:left;background-image: url(../images/au_formMessage.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
+	.formtextarea{width:570px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.sendingbtn{width:45%;text-align:left;}
+}
+@media screen and (min-width:1148px) {
+	#page{width:1148px;}
+	#project_detail .project_box_infos {position: fixed;width:300px;color:white;height:auto;overflow: visible;}
+	.project_box_bottons{font-family:'clearviewhwy-3-wregular';position:fixed;width:300px;font-size:14px;padding-top: 10px;}
+	#footer_text_bgscreen {display: block;}
+	#footer_text_slscreen {display: none;}
+	.footer_text .column_1 {float: left;padding-right: 5px;}
+	.footer_text .column_2 {text-align: justify;float: left;width:430px;}
+	.profile{width:27%;float:left;}
+	.whatWeDo{width:46%;float:left;padding:0;}
+	.contactMessage{width:250px;float:left;}
+	.contactForm{width:602px;float:left;margin:0;padding:0 0 0 50px;}
+	.whatWeDo h1{width:83%;margin:0;padding:0 36px 10px 36px;}
+	.whatWeDo p{width:83%;margin:0;padding:0 36px 20px 36px;}
+	.boxTitle,.boxTitle1,.boxField{width:287px;float:left;}
+	.boxSpacer1{width:287px;height:20px;float:left;}
+	.boxTitle,.boxTitle1,.boxField{margin:0;padding:0 14px 0 0;}
+	.boxTitle2{height:0px;overflow:hidden;}
+	#formField{background-image: url(../images/au_formField.gif);}
+	.box3{width:601px;height:122px;float:left;background-image: url(../images/au_formMessage.gif);background-repeat: no-repeat;background-position:left top;padding-bottom: 15px;}
+	.formtextarea{width:570px;height:100px;margin:10px;padding:0;border:0;background-color:transparent;}
+	.sendingbtn{width:45%;text-align:left;}
+}
+
+.project_description p{margin:0 0 10px;}
+#page_project {position: relative;margin:auto;min-height:700px;height:auto;overflow:visible;padding:15px 0 30px;}
+#projects {clear: both;margin: auto;}
+#project_detail {position: relative;clear: both;margin: auto;padding-top:20px;}
+#projects .project {float:left;width: 366px;height: 386px;border: 2px solid #FF782B;margin: 5px;position: relative;}
+#projects .project_title{background: url("../images/hp_frameTitle.png") no-repeat left top transparent;position: absolute;top: 0;left: 0;z-index: 9999;height: 33px;width: 366px;text-align: center;font-size: 14px;text-transform: uppercase;}
+.project_rollover {width: 102px;height: 105px;position: absolute;margin-left: 0px;margin-top: -230px;z-index: 9999;-webkit-transition: all 0.6s ease-in-out;-moz-transition: all 0.6s ease-in-out;-o-transition: all 0.6s ease-in-out;-ms-transition: all 0.6s ease-in-out;opacity: 0;transition: all 0.6s ease-in-out 0s;filter:alpha(opacity=0);}
+.rollover-in {-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transforn: rotate(180deg);margin-left: 120px;opacity: 1;filter:alpha(opacity=100);}
+.rollover-out {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);margin-left: 266px !important;opacity: 0;filter:alpha(opacity=0);}
+.footer_text .column_2 {font-family:'Arial';letter-spacing:1px;}
+#history,#contact{position:relative;clear:both;margin: auto;padding-top:20px;}
+.profile .individual{float:left;width:238px;height:238px;border: 2px solid #FF782B;margin:0;position:relative;}
+.individual .designer_name {font-family:'clearviewhwy-3-wregular';height:33px;width:100%;text-align:center;font-size:14px;color:#FFFFFF;text-transform:uppercase;background: url("../images/contact_frameTitle.png") no-repeat left top transparent;position:absolute;top:0;left:0;z-index: 9999;}
+#page_project .seperater{width:100%;margin:0;padding:20px 0;float:left;text-align:center;}
+.seperater{width:100%;margin:0;padding:20px 0;float:left;}
+.individualContact{width:100%;font-family:'clearviewhwy-3-wregular';font-size:14px;color:#414042;text-transform:uppercase;}
+.individualContact a{color:#414042;text-decoration:none;margin:0;padding:0 10px 0 0;}
+.individualContact a:hover{color:#ff782b;text-decoration:none;margin:0;padding:0 10px 0 0;}
+.whatWeDo h1{font-family:'clearviewhwy-3-wregular';font-size:16px;text-transform:uppercase;color:#414042;background-image: url(../images/arrow_contacts.png);background-repeat:no-repeat;background-position:11px 2px;}
+.whatWeDo p{font-family:'Arial';font-size:14px;line-height:20px;color:#414042;}
+.contactMessage{font-family:'clearviewhwy-3-wregular';font-size:20px;color:#ff782b;text-transform:uppercase;}
+.contactForm{font-family:'clearviewhwy-3-wregular';font-size:16px;color:#000000;text-transform:uppercase;}
+.formTitle{font-family:'clearviewhwy-3-wregular';font-size:13px;text-transform:none;height:25px;padding:10px 20px 0 10px;float:left;background-image: url(../images/au_3dots.png);background-repeat: no-repeat;background-position: right center;}
+.formInfo{font-family:'Arial';font-size:12px;text-transform:lowercase;height:25px;padding:5px 0 0 10px;float:left;}
+#formField{padding-bottom:15px;background-repeat: no-repeat;background-position:left top;}
+#Push{padding-left:10px;}
+.sendingbtn{float:right;background-image: url(../images/arrow_contacts.png);background-repeat:no-repeat;padding-left: 25px;}
+.btnstyle{border:0;background-color:transparent;text-transform:uppercase;font-family:'clearviewhwy-3-wregular';font-size:16px;margin:0;padding:0;}
+
+#projects .project:hover > .project_rollover {
+	/*-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg);
+	transforn: rotate(180deg);
+	margin-top: -215px;
+	opacity: 1;
+	filter:alpha(opacity=100);*/
+	/*background: url("../images/rollover.png") no-repeat left top transparent;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 9999;
+	height: 366px;
+	width: 366px;*/
+}
+
+/*#projects .project:hover > .project_rollover_2 {
+	background: url("../images/preview_overlay.png") repeat left top transparent;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 9998;
+	height: 366px;
+	width: 366px;
+}*/
+
+#projects .project .project_rollover_2 {background: url("../images/preview_overlay.png") repeat left top transparent;position: absolute;top: 20px;left: 0;z-index: 9998;height: 366px;width: 366px;}
+#projects .project:hover > .project_rollover_2 {background: none;}
+#projects .project_image {padding-top:20px;z-index: 9997;}
+
+/*#projects .project:hover {
+	background-color: #ccc;
+	opacity:0.4;
+}*/
+/*
+#projects .project_image img:hover {
+	background: url("../images/rollover.gif") no-repeat left top transparent;
+	width: 366px;
+	height:366px;
+	position: absolute;
+	left: 0;
+	z-index: 9998;
+}*/
+
+.formInput{width:200px;border:0;height:25px;background-color:transparent;padding:0;margin:0;}
+
+#dots {clear: both;text-align: center;padding-top: 15px;padding-bottom: 15px;}
+.project_box_infos #dots{clear: both;text-align:left;padding:15px 20px;background-color:#FF782B;}
+#projects a{color:#FFFFFF;text-decoration:none;}
+.project_portfolio{padding:0 0 20px 0;}
+.project_portfolio img{border: solid 1px #FFEDE1;}
+.project_box_infos{font-family:'clearviewhwy-3-wregular';}
+.project_box .shadow_box{box-shadow:0px 5px 30px #c8c8c8;}
+.project_box_infos .project_title{color:#000000;font-size:40px;line-height:33px;text-transform:uppercase;padding:10px 20px 5px 20px;background-color:#FF782B;}
+.project_box_infos .project_subtitle{font-size:12px;line-height:16px;padding: 0 20px 0 20px;background-color:#FF782B;}
+.project_box_infos .project_description{font-family:Arial;font-size:15px;line-height:18px;padding:0 20px 15px 20px;background-color:#FF782B;}
+.project_box_botton{width:122px;float:right;}
+.project_box_botton a{text-decoration:none;color:#000000;}
+.project_box_botton a:hover{text-decoration:none;color:#FF782B;}
+.botton_top{background-image: url(../images/arrow_top.png);background-repeat:no-repeat;background-position:left 0px;margin:0px;height:24px;padding:5px 0 0 28px;}
+.botton_next{background-image: url(../images/arrow_right.png);background-repeat:no-repeat;background-position:left 0px;margin:0px;height:24px;padding:5px 0 0 28px;}
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{display: inline-block;}
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.needsfilled {
+color:red;
+font-size:11px;
+}
+/* close commented backslash hack */
+.individualContact a.twitter,.individualContact a.facebook,.individualContact a.linkedin,.individualContact a.behance{float:left;height:16px;padding:9px 30px 0 0;background-position:0px 0px;background-repeat:no-repeat;}
+.individualContact a.twitter{background-image:url('../images/icon_twitter.gif');}
+.individualContact a.facebook{background-image:url('../images/icon_facebook.gif');}
+.individualContact a.linkedin{background-image:url('../images/icon_linkedin.gif');}
+.individualContact a.behance{background-image:url('../images/icon_behance.gif');}
+.individualContact a:hover.linkedin,.individualContact a:hover.behance,.individualContact a:hover.twitter,.individualContact a:hover.facebook {background-position:0px -30px;}
