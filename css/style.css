@@ -1,0 +1,77 @@
+html,body{width:100%;margin:0;padding:0;}
+a{color:#000000;text-transform:none;text-decoration:none;}
+
+@font-face {
+    font-family: 'allerbold';
+    src: url('aller_bd-webfont.eot');
+    src: url('aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aller_bd-webfont.woff') format('woff'),
+         url('aller_bd-webfont.ttf') format('truetype'),
+         url('aller_bd-webfont.svg#allerbold') format('svg');
+    font-weight: normal;font-style: normal;}
+
+@font-face {
+    font-family: 'allerregular';
+    src: url('aller_rg-webfont.eot');
+    src: url('aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aller_rg-webfont.woff') format('woff'),
+         url('aller_rg-webfont.ttf') format('truetype'),
+         url('aller_rg-webfont.svg#allerregular') format('svg');
+    font-weight: normal;font-style: normal;}
+
+.container{width:100%;margin:0;padding:0;}
+.header{width:100%;margin:0;padding:0;background-color:#262626;position:fixed;z-index:100;}
+.insideheader{width:925px;margin:0 auto;}
+.logo{width:350px;margin:0;padding:50px 0;float:left;}
+.menu{width:575px;margin:0;padding:0;float:left;}
+.menu ul{margin:0;padding:135px 0 0 0;color:#ffffff;text-transform:uppercase; list-style-type:none;float:right;}
+.menu ul li{margin:0;padding:0 5px;display:inline;}
+.menu ul li a:link,.menu ul li a:visited,.menu ul li a:active{font-family:'allerregular',arial,sans-serif;color:#FFFFFF;text-transform:uppercase;}
+.menu ul li a:hover{color:#FFFFFF;text-transform:uppercase;border-bottom:solid 3px #FFFFFF;padding-bottom:3px;}
+
+.content{width:100%;margin:0;padding:201px 0 0 0;position:relative;z-index:1;}
+
+.greetingSec{width:100%;height:568px;margin:0;padding:0;background-color:#FFFFFF;}
+.flowerlady{width:925px;height:635px;margin:0 auto;padding:0;background-image:url(../images/flowergirl.jpg);background-repeat:no-repeat;background-position:right top;position:relative;}
+.quote1{position:absolute;top:360px;}
+
+.socialSec{width:100%;height:885px;margin:0;padding:0;background-image:url(../images/bg.gif);}
+.instaFeeds{float:left;width:572px;height:760px;padding:0 25px 0 0;margin:0;}
+.twitterFeeds{float:left;width:290px;height:750px;background-color:#333333;padding:5px;margin:0;}
+.socialLogo{font-family:'allerregular',arial,sans-serif;font-size:14px;float:left;height:30px;padding:10px 0 0;text-align:right;}
+.socialLogo a{text-transform:uppercase;}
+.one{width:560px;padding-right:25px;}
+.two{width:290px;}
+
+.portfolioSec{width:100%;margin:0;padding:0;background-color:#FFFFFF;}
+.portcont{width:925px;margin:0 auto; padding:50px 0;}
+.column{width:298px;margin:0;padding:0 5px;float:left;}
+.port1{padding:10px 0;}
+.port2{padding:0 10px 10px 0;}
+.port3{padding:0 0 10px 0;}
+
+.contactSec{width:100%;height:885px;margin:0;padding:0;background-image:url(../images/bg.gif);}
+.contact{width:925px; padding:50px 0 75px; margin:0 auto;}
+.contact2{width:100%; padding:0 0 25px; margin:0;}
+.bio{width:450px;padding:0 70px 0 0;float:left;margin:0;}
+.quote2{width:375px;padding:20px 0 0;float:left;margin:0;}
+.contacttitle{font-family:'allerbold',arial,sans-serif;padding:0;margin:0;font-size:17px;text-transform:uppercase;}
+.contactcopy{font-family:'allerregular',arial,sans-serif;padding:0;margin:0;font-size:15px;line-height:18px;}
+.formtitles{padding:0 15px 0 0;margin:0; width:140px;float:left;}
+.mailing{padding:0 35px 0 0;margin:0;width:330px;float:left;}
+.profilephoto{padding:0;margin:0;width:372px;float:left;}
+.titleBox1,.titleBox2{font-family:'allerbold',arial,sans-serif;letter-spacing:2px;background-color:#262626;text-align:right;text-transform:uppercase;color:#FFFFFF;font-size:17px;padding:5px;margin:0 0 5px;}
+.titleBox2{margin-top:223px;}
+.formform1{background-color:transparent;padding:0;}
+.formInput{width:330px;height:29px;padding:0;}
+.btnstyle{font-family:'allerbold',arial,sans-serif;font-size:17px;letter-spacing:2px;border:0;background-color:transparent;color:#FFFFFF;text-transform:uppercase;margin:0;padding:0;}
+.formtextarea{border:1px solid #bababa;}
+
+.artistinfo{font-family:'allerregular',arial,sanns-serif;padding:0 30px 0 0;margin:0;font-size:17px;text-transform:uppercase;text-align:right;}
+
+.anchor1{position:absolute;top:0px;left:50%;width:1px;height:1px;}
+.anchor2{position:absolute;top:568px;left:50%;width:1px;height:1px;}
+.anchor3{position:absolute;top:1453px;left:50%;width:1px;height:1px;}
+.anchor4{position:absolute;top:2525px;left:50%;width:1px;height:1px;}
+
+.media-grid a{margin: 0 6px 6px 0 !important;}
