@@ -16,11 +16,13 @@ body {width:100%;padding:0px;margin:0px;}
 
 #sparated_body header {margin: auto;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat scroll center top transparent;}
 .header {text-align: center;}
-#logo {padding-bottom:10px;text-align:center;}
+#logo {padding:10px 0;text-align:center;}
 #page {width:1148px;position:relative;margin:0 auto;min-height:700px;height:auto;overflow: visible;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat top center transparent;}
-.footer{width:600px;margin:0 auto;}
+.footer{width:600px;margin:0 auto;padding:0 0 25px;}
 #footer_text_slscreen {display: none;}
 .footer .footerBtn{overflow:hidden;height:0;}
+.footer_text .column_1 {float: left;padding-right: 5px;}
+.footer_text .column_2 {text-align:justify;float:left;}
 #menu {width:100%;height:35px;}
 #menu ul li a, .project_section{width:8em;padding:0.2em 0.6em;}
 #menu{text-align:center;margin:auto;font-size:14px;}
@@ -31,6 +33,8 @@ body {width:100%;padding:0px;margin:0px;}
 #menu ul li a:hover {color: #ff782b;}
 .project_section{background-repeat:no-repeat;background-position-x:center;background-position-y:bottom;background-image:url(../images/hp_3dots_white.png);background-position:center bottom;}
 #project_detail .project_box{position:absolute;right:0px;top:0px;width:300px;margin:3px auto 0;}
+#project_detail .project_box_infos {color:white;}
+.project_box_bottons{padding-top: 10px;}
 
 @media screen and (max-width:762px) {
 	#page { width:377px; background-size: 300px 800px !important; }
