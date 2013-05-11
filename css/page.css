@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-body {padding: 0px;margin: 0px;}
+body {width:100%;padding:0px;margin:0px;}
 #unique_body, #sparated_body #page_top{background-color: #11ABDB;background-image: url("../images/bg.jpg");color: white;font-family: 'clearviewhwy-3-wregular';}
 #sparated_body #page_top {margin:auto;box-shadow: 0 0 6px 4px #888888;}
 #page_project{width:902px;}
@@ -17,7 +17,7 @@ body {padding: 0px;margin: 0px;}
 #sparated_body header {margin: auto;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat scroll center top transparent;}
 .header {text-align: center;}
 #logo {padding-bottom:10px;text-align:center;}
-#page {width:1148px;position: relative;margin:auto;min-height:700px;height:auto;overflow: visible;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat top center transparent;}
+#page {width:1148px;position:relative;margin:0 auto;min-height:700px;height:auto;overflow: visible;padding-top: 15px;background: url("../images/hp_splash.jpg") no-repeat top center transparent;}
 .footer{width:600px;margin:0 auto;}
 #footer_text_slscreen {display: none;}
 .footer .footerBtn{overflow:hidden;height:0;}
